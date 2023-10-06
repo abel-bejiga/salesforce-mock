@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <>
         <nav className='bg-white py-2'>
-           <div className='flex justify-between items-center px-10 text-sm'>
+           <div className='flex justify-between items-center px-10 text-sm text-[#032d60]'>
            <ul className="menu_items flex gap-5 items-center font-semibold">
                 <li className='w-14 h-14'>
                     <img src={logo} alt="logo" className='w-full h-full object-contain object-center' />
