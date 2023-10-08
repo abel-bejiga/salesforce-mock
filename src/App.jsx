@@ -1,7 +1,8 @@
 import React from "react"
 import Header from "./components/Header"
 import News from "./components/News"
-import Hero from "./pages/Hero"
+import Hero from "./page/Hero"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Header /> 
       <News />
       <Hero />
+      <Footer />
     </>
   )
 }

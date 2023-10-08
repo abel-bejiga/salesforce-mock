@@ -18,7 +18,7 @@ const Header = () => {
     
   return (
     <>
-        <nav className='bg-white py-2'>
+        <nav className='fixed top-0 z-[2] w-full h-20 bg-white py-2'>
            <div className='flex justify-between items-center px-10 text-sm text-[#032d60]'>
            <ul className="menu_items flex gap-5 items-center font-semibold">
                 <li className='w-14 h-14'>

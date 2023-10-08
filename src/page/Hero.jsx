@@ -35,6 +35,13 @@ import crm_bg from '../assets/crm_bg.webp'
 import events_1 from '../assets/events_1.jpg'
 import events_2 from '../assets/events_2.webp'
 import events_3 from '../assets/events_3.webp'
+// app exchange
+import app_bg from '../assets/apps_bg.webp'
+// try SF
+import trySF_bg from '../assets/trySF_bg.webp'
+// sign up
+import signUp_bg from '../assets/signup_bg.webp'
+
 
 const Hero = () => {
 
@@ -95,7 +102,7 @@ const Hero = () => {
 
   return (
     <>
-        <section>
+        <section className=''>
             <div className='h-[550px] w-full' style={{background: `url(${heroBG}) center/cover no-repeat`}}>
                 <div className='py-20 h-full w-full relative'>
                     <div className='hero_disc w-1/2 px-14 grid gap-5 text-[#032d60]'>
@@ -294,6 +301,44 @@ const Hero = () => {
                 <Buttons name='Explore Trailblazer Community' styles='border-2 m-auto border-[#0176d3] px-5 py-2 w-fit text-xs font-bold text-[#0176d3] my-7'/>
             </article>
         </section>
+{/* app exchange */}
+        <section className='mb-14'>
+            <article className='text-[#032d60] h-full w-[900px] m-auto flex justify-between items-center'>
+                <div className='w-96 h-full'>
+                    <img src={app_bg} alt="img" className='w-full h-full object-cover object-center' />
+                </div>
+                <div className='w-1/2 max-w-[375px] h-full grid gap-4'>
+                    <h1 className=' text-4xl font-bold '>Discover apps and expertise to extend Salesforce.</h1>
+                    <p className='text-[14px]'>Browse our AppExchange marketplace, with thousands of customized apps and specialized consulting partners to help any sized business craft a perfectly tailored Customer 360 solution.</p>
+                    <Buttons name='Visit AppExchange' styles='border-2 border-[#0176d3] px-5 py-2 w-fit text-xs font-bold text-[#0176d3] my-7'/>
+                </div>
+            </article>
+        </section>
+{/* try salesforce */}
+        <section className='mb-14'>
+            <div className='text-[#032d60] h-full w-[580px] m-auto grid place-content-center'>
+                <h1 className='text-3xl text-center font-bold '>Try Salesforce for free. No credit card required, no software to install.</h1>
+                <Buttons name='Start free trial'  styles='text-white m-auto bg-[#0176d3] px-5 py-2 w-fit text-xs font-bold text-[#0176d3] my-7'/>
+                <div className='w-[750px] h-[450px]'>
+                <img src={trySF_bg} alt="img" className='w-full h-full object-cover object-center'/>
+                </div>
+            </div>
+        </section>
+{/* udpates */}
+        <section className='mb-14 mt-32'>
+            <div className='text-[#032d60] h-[400px] w-[900px] m-auto'>
+                    <div className='rounded-xl shadow shadow-neutral-400 w-full h-full flex justify-between items-center'>
+                        <div className='w-1/2 m-auto pl-10'>
+                        <h1 className='text-4xl font-bold'>Get timely updates and fresh ideas delivered to your inbox.</h1>
+                    <Buttons name='Sign up now' styles='text-white bg-[#0176d3] px-5 py-2 w-fit text-xs font-bold text-[#0176d3] my-7'/>
+                        </div>
+                        <div className='w-1/2 h-full'>
+                            <img src={signUp_bg} alt="img" className='w-full h-full object-cover object-center rounded-r-xl'/>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
 
 
 
